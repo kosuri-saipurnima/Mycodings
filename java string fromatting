@@ -1,0 +1,22 @@
+/////for java,string output fromatting ,here in the code we used to things:
+1.for justifying we need to declare ,if it string %s---then %and use minus symbol and number of spaces of justification and string s.
+2.for number formatting like putting 0 before 2 digit or 1 digit number ,use %0-how many numbers of formatting u need and int d.
+ 
+ 
+ import java.util.Scanner;
+
+public class Solution {
+
+    public static void main(String[] args) {
+            Scanner sc=new Scanner(System.in);
+            System.out.println("================================");
+            for(int i=0;i<3;i++){
+                String s1=sc.next();
+                int x=sc.nextInt();
+                System.out.printf("%-15s%03d\n",s1,x);
+            } 
+            System.out.println("================================");
+
+    }
+}
+
