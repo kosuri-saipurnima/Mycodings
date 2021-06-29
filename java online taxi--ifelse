@@ -1,0 +1,30 @@
+
+
+//import for Scanner and other utility classes
+import java.util.*;
+import java.io.*;
+
+
+class TestClass {
+    public static void main(String args[] ) throws Exception {
+       Scanner sc= new Scanner(System.in);
+       long D,a,b,c,e,f,g,h;
+       D=sc.nextLong();
+        a=sc.nextLong();
+        b=sc.nextLong();
+        c=sc.nextLong();
+        e=sc.nextLong();
+        f=sc.nextLong();
+        g=sc.nextLong();
+        h=sc.nextLong();
+       if(a+(D-b)*c<=f+(D/e)*g+D*h)
+       {
+           System.out.println("Online Taxi");
+       }
+        else
+        {
+          System.out.println("Classic Taxi");  
+        }
+
+    }
+}
