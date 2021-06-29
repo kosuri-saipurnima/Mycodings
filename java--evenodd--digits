@@ -17,8 +17,7 @@ else
 s1=(s1*10)+r;
 n=n/10;
 }
-System.out.println("printing s:"+s);
-System.out.println("printing s1:"+s1);
+System.out.println("odd digits:"+s+" "+"even digits:"+s1);
 }
 }
 
