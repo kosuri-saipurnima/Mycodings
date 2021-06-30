@@ -1,0 +1,42 @@
+///1. Write a program to read a number 'n', read x & y numbers . change number x to y in given number 'n'.
+Example1: Input :
+n=16719 x=1 y=8
+Output: 86789
+Explanation: Here number 1 is replaced with 8 ,
+Example 2: Input
+n= 2342758 x=2 y=5
+Output: 5345758
+Explanation : Here number 2 is replaced with 5 .///
+
+import java.util.*;
+import java.io.*;
+class Saip
+{
+public static void main(String args[])
+{
+Scanner sc=new Scanner(System.in);
+int n,i;
+String s,y;
+char x;
+String g="";
+System.out.println("enter x");
+x=sc.next().charAt(0);
+System.out.println("enter y");
+y=sc.next();
+System.out.println("enter n");
+n=sc.nextInt();
+s=String.valueOf(n);
+for(i=0;i<=s.length()-1;i++)
+{
+if(s.charAt(i)== x)
+{
+g=g+y;
+}
+else
+{
+g=g+s.charAt(i);
+}
+}
+System.out.println(Integer.valueOf(g));
+}
+}
