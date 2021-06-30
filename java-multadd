@@ -1,0 +1,25 @@
+//https://leetcode.com/problems/subtract-the-product-and-sum-of-digits-of-an-integer/
+
+import java.io.*;
+import java.util.*;
+class Multadd
+{
+public static void main(String args[])
+{
+Scanner sc=new Scanner(System.in);
+int n;
+n=sc.nextInt();
+int r,mul=1,add=0;
+while(n!=0)
+{
+r=n%10;
+n=n/10;
+mul=mul*r;
+add=add+r;
+}
+System.out.println(mul-add);
+}
+}
+
+Sample output:234--->24-9=15
+
