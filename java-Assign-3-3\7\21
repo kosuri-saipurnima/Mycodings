@@ -1,0 +1,27 @@
+import java.util.*;
+import java.io.*;
+class Automorphic
+{
+public static void main(String args[])
+{
+Scanner sc=new Scanner(System.in);
+int n,mul,rem;
+System.out.println("Enter n:");
+n=sc.nextInt();
+mul=n*n;
+rem=mul%100;
+if(n==rem)
+{
+System.out.println("Number is Automorphic");
+}
+else
+{
+System.out.println("Number is not Automorphic");
+}
+}
+}
+
+sample output:Input : N = 25Output : Automorphic 
+As 25*25 = 625
+Input : N = 7Output : Not Automorphic
+As 7*7 = 49
