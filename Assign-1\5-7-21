@@ -1,0 +1,29 @@
+Assignment 1:
+Program to find minimum element from the array
+-------------------------------------------------
+import java.io.*;
+import java.util.*;
+class Zeropyb
+{
+public static void main(String args[])
+{
+Scanner sc=new Scanner(System.in);
+int i=0,n,temp,j=0;
+System.out.println("enter n:");
+n=sc.nextInt();
+int ar[]=new int[n];
+System.out.println("enter array elements:");
+for(i=0;i<n;i++)
+{
+ar[i]=sc.nextInt();
+}
+Arrays.sort(ar);
+System.out.println("minimum value:");
+System.out.println(ar[0]);
+}
+}
+sample output:
+enter n:
+5 3 68 7 90 45
+minimum value:
+3
