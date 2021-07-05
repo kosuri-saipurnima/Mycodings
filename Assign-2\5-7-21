@@ -1,6 +1,7 @@
 Assignment-2:
 Program to find duplicate elements from the array.
 ------------------------------------------------------------
+
 import java.io.*;
 import java.util.*;
 class Zerosai
@@ -12,6 +13,7 @@ int i=0,n,j;
 System.out.println("enter element n:");
 n=sc.nextInt();
 int ar[]=new int[n];
+System.out.println("enter array elements:");
 for(i=0;i<n;i++)
 {
 ar[i]=sc.nextInt();
@@ -28,6 +30,9 @@ System.out.println("duplicate element:"+ar[j]);
 }
 }
 }
+
+
+
 
 sample output:
 enter element n:5
