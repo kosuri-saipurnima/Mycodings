@@ -1,0 +1,40 @@
+Assignment-2:
+Program to find duplicate elements from the array.
+------------------------------------------------------------
+import java.io.*;
+import java.util.*;
+class Zerosai
+{
+public static void main(String args[])
+{
+Scanner sc=new Scanner(System.in);
+int i=0,n,j;
+System.out.println("enter element n:");
+n=sc.nextInt();
+int ar[]=new int[n];
+for(i=0;i<n;i++)
+{
+ar[i]=sc.nextInt();
+}
+for(i=0;i<n;i++)
+{
+for(j=i+1;j<n;j++)
+{
+if(ar[i]==ar[j])
+{
+System.out.println("duplicate element:"+ar[j]);
+}
+}
+}
+}
+}
+
+sample output:
+enter element n:5
+1
+2
+3
+2
+1
+duplicate element:1
+duplicate element:2
