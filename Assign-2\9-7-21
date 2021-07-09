@@ -1,0 +1,25 @@
+import java.util.*;
+class Stringsplit 
+{
+public static void main(String args[])
+{
+String str;
+int m=0;
+Scanner sc=new Scanner(System.in);
+System.out.print("Enter string data:");
+str=sc.nextLine();
+String ch[]=str.split(" ");
+int n=ch.length;
+if(n==0)
+System.out.print(n);
+else
+{
+for(int i=0;i<n;i++)
+{
+String st=ch[i];
+m+=st.length();
+}
+System.out.print("string split count:"+m);
+}
+}
+}
