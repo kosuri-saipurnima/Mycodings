@@ -1,0 +1,29 @@
+import java.util.*;
+import java.io.*;
+class Evodwise
+{
+public static void main(String args[])
+{
+Scanner sc=new Scanner(System.in);
+String str;
+String e="";
+String o="";
+System.out.println("enter str:");
+str=sc.next();
+char ch[]=str.toCharArray();
+int n=ch.length;
+for(int i=0;i<n;i++)
+{
+if(ch[i]%2==0)
+{
+e=e+ch[i];
+}
+else
+{
+o=o+ch[i];
+}
+}
+System.out.println("odd wise:"+o);
+System.out.println("even wise:"+e);
+}
+}
