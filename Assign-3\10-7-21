@@ -1,0 +1,41 @@
+import java.util.*;
+import java.io.*;
+
+public class Biond {
+	public static void main(String[] args) {
+		int n,option;
+		String out;
+		Scanner sc = new Scanner(System.in);
+		System.out.print("Enter decimal number:");
+		n = sc.nextInt();
+		System.out.print("1\t:\tCovert decimal to hexa decimal\n2\t:\tCovert decimal to octal\n3\t:\tCovert decimal to binary\n\nPlease select any one from above:");
+		option = sc.nextInt();
+		switch(option)
+		{
+			case 1:{
+				out = Integer.toHexString(n);
+				System.out.print("\n\nHexa value\t:\t"+out+"\n\n");
+				break;
+			}
+			case 2:{
+				out = Integer.toOctalString(n);
+				System.out.print("\n\nOctal value\t:\t"+out+"\n\n");
+				break;
+			}
+			case 3:{
+				out = Integer.toBinaryString(n);
+				System.out.print("\n\nBinary value\t:\t"+out+"\n\n");
+				break;
+			}
+			default: {
+				System.out.print("Invalid option\n");
+				break;
+			}
+		}
+	}
+}
+
+
+
+
+
