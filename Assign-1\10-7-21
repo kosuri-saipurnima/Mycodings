@@ -1,0 +1,27 @@
+import java.util.*;
+import java.io.*;
+class Revassi
+{
+public static void main(String args[])
+{
+Scanner sc=new Scanner(System.in);
+String str;
+System.out.println("enter str");
+str=sc.nextLine();
+String rev="";
+String words[] = str.split(" ");
+int n;
+n=words.length;
+for(int i=0;i<n;i++)
+{
+String word = words[i]; 
+String reverseWord = "";
+for(int j=word.length()-1;j>=0;j--) 
+{
+reverseWord = reverseWord + word.charAt(j);
+}
+rev = rev + reverseWord + " ";
+}
+System.out.println("reversed str:"+rev);
+}
+}
