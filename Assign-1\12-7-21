@@ -1,0 +1,29 @@
+import java.util.*;
+import java.io.*;
+class Capital
+{
+public static void main(String args[])
+{
+Scanner sc=new Scanner(System.in);
+String str;
+System.out.println("nter str:");
+str=sc.nextLine();
+String sp[]=str.split(" ");
+String Capital="";
+int n;
+n=sp.length;
+for(int i=0;i<n;i++)
+{
+String word=sp[i];
+char ch[]=word.toCharArray();
+String cap=String.valueOf(ch[0]);
+String capi=cap.toUpperCase();
+for(int j=1;j<ch.length;j++)
+{
+capi=capi+ch[j];
+}
+Capital=Capital+capi+" ";
+}
+System.out.println(Capital);
+}
+}
