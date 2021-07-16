@@ -1,0 +1,42 @@
+
+import java.util.*;
+class Frames
+{
+public static void main(String args[])
+{
+Scanner sc=new Scanner(System.in);
+int n;
+int key;
+int v;
+System.out.println("Enter n value");
+n=sc.nextInt();
+System.out.println("Enter v value");
+v=sc.nextInt();
+ArrayList<Integer> x=new ArrayList<Integer>();
+
+System.out.println("enter Elements are:");
+for(int i=0;i<n;i++)
+{
+x.add(sc.nextInt());
+}
+System.out.println("Elements are:");
+for(Integer i:x)
+{
+System.out.println(i);
+}
+System.out.println("Enter key value");
+key=sc.nextInt();
+if(x.contains(key))
+{
+System.out.println(x.set(x.indexOf(key),v));
+System.out.println("after updation elements are:");
+System.out.println(x);
+}
+else
+{
+System.out.println("False");
+}
+
+}
+
+}
