@@ -1,0 +1,33 @@
+
+import java.util.LinkedList;
+import java.util.Scanner;
+class Frames2
+{
+public static void main(String args[])
+{
+Scanner sc=new Scanner(System.in);
+LinkedList<Integer> x = new LinkedList<Integer>();
+int n;
+int key;
+System.out.println("enter n");
+n=sc.nextInt();
+System.out.println("enter key");
+key=sc.nextInt();
+int i;
+System.out.println("enter elements are");
+for(i=0;i<n;i++)
+{
+x.add(sc.nextInt());
+}
+if(x.contains(key))
+{
+x.remove(x.indexOf(key));
+System.out.println("List After Deletion:");
+System.out.println(x);
+}
+else
+{
+System.out.println("Element Not found");
+}
+}
+}
