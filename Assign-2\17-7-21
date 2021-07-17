@@ -1,0 +1,29 @@
+import java.util.*;
+import java.io.*;
+class Vectar
+{
+public static void main(String args[])throws Exception
+{
+Scanner sc=new Scanner(System.in);
+Vector v=new Vector();
+String str;
+System.out.println("enter str to search");
+str=sc.next();
+v.add(101);
+v.add("Rama");
+v.add(6.58);
+v.add(102);
+v.add("Gita");
+v.add(8.98);
+System.out.println("without changes:"+v);
+v.remove("Gita");
+System.out.println("after removing gita:"+v);
+v.remove(2);
+v.add(2,9.17);
+System.out.println("after overall updation:"+v);
+if(v.contains(str))
+System.out.println("true");
+else
+System.out.println("false");
+}
+}
