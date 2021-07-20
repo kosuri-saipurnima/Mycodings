@@ -1,0 +1,30 @@
+import java.util.*;
+import java.io.*;
+class pro2
+{
+public static void main(String args[])
+{
+Scanner sc=new Scanner(System.in);
+ArrayList<Integer> a=new ArrayList<Integer>();
+int n;
+int key;
+System.out.println("enter n value");
+n=sc.nextInt();
+System.out.println("enter elements");
+for(int i=0;i<n;i++)
+{
+a.add(sc.nextInt());
+}
+System.out.println(a);
+
+System.out.println("enter key value");
+key=sc.nextInt();
+Iterator<Integer>j=a.iterator();
+while(j.hasNext())
+{
+if(j.next()<=key)
+	j.remove();
+}
+System.out.println(a);
+}
+}
