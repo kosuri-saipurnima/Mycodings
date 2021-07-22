@@ -1,0 +1,30 @@
+import java.util.*;
+class Table
+{
+	public static void main(String args[])
+	{
+		Scanner sc=new Scanner(System.in);
+		Hashtable<Integer,Integer>x=new Hashtable<Integer,Integer>();
+		int n;
+		int key;
+		System.out.println("enter number of values");
+		n=sc.nextInt();
+		System.out.println("enter value to delete");
+		key=sc.nextInt();
+		int i;
+		System.out.println("enter values are");
+		for(i=0;i<n;i++)
+		{
+			x.put(sc.nextInt(),sc.nextInt());
+		}
+		if(x.containsKey(key))
+		{
+			x.remove(x.get(key));
+			System.out.println("after deletion value is"+x);
+		}
+		else
+		{
+			System.out.println("not found");
+		}
+	}
+}
