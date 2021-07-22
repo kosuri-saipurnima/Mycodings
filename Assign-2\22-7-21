@@ -1,0 +1,21 @@
+class Solution {
+    public boolean isValid(String s) {
+        Stack<Character> str=new Stack<Character>();
+        char t;
+        char ch[]=s.toCharArray();
+        for(char i:ch)
+        {
+            t=str.empty()?'@':str.peek();
+            if(t=='(' && i==')')
+                str.pop();
+            else if(t=='{' && i=='}')
+                str.pop();
+            else if(t=='[' && i==']')
+                str.pop();
+            else
+                str.push(i);
+        }
+        return str.empty()?true:false;
+        
+    }
+}
