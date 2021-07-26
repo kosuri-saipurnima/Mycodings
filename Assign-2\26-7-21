@@ -1,0 +1,15 @@
+class Solution {
+    public int trailingZeroes(int n) {
+        int result=1;
+        int count=0;
+        for(int i=5;i<=n;i*=5)
+        {
+        if(n%i==0)
+        {
+            count++;
+        }
+    
+    }
+        return count;
+}
+}
